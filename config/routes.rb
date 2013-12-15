@@ -1,4 +1,5 @@
 LearnRails::Application.routes.draw do
+  resources :contacts, only: [:new, :create]
   root to: 'visitors#new'  # will be redirected to the VisitorsController new action
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
